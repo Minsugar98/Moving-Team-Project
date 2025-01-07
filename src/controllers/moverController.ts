@@ -97,6 +97,7 @@ const patchMoverProfileController = async (
     ) {
       throw new Error('권한이 없습니다');
     }
+    console.log(req.body);
     const { id } = (req as any).user as { id: number };
     const { career } = req.body;
     const careerNumber = parseInt(career);
