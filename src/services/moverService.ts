@@ -102,7 +102,7 @@ const getMoverList = async ({
       let isConfirmed = false;
       if (id) {
         const customerData = await customerRepository.findFirstData({
-          where: { id: id },
+          where: { userId: id },
         });
         const estimateReqData = await estimateRequestRepository.findFirstData({
           where: { customerId: customerData?.id },
@@ -121,7 +121,7 @@ const getMoverList = async ({
             : false;
         }
         isFavorite = !!(await favoriteRepository.findFirstData({
-          where: { moverId: mover?.id, customerId: id },
+          where: { moverId: mover?.id, customerId: customerData?.id },
         }));
       }
 
@@ -348,12 +348,21 @@ const patchMoverProfile = async (userId: number, updateData: any) => {
   if (!moverData) {
     throw new Error('프로필 생성하지 않음');
   }
+  if (moverData.nickname === updateData.nickname) {
+    return {
+      type: 'nickname',
+      message: '닉네임 중복입니다.',
+    };
+  }
+
   const patchData = {
     profileImage: updateData.profileImage,
     nickname: updateData.nickname,
     summary: updateData.summary,
     description: updateData.description,
     career: updateData.career,
+    serviceType: updateData.serviceType,
+    serviceRegion: updateData.serviceRegion,
   };
   await moverRepository.updateData({
     where: { id: moverData.id },
