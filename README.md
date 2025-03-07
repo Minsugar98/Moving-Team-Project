@@ -36,8 +36,8 @@
       - 기사님 리스트 조회
       - 기사님 프로필 상세 조회
 ### **기술 스택**
-- **Express, Prisma**
-- **AWS EC2, S3, PostgreSQL**
+- **Express, Prisma, NodeJS**
+- **AWS EC2, S3, PostgreSQL, Github**
    
 <hr>
 
