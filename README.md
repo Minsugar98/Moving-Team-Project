@@ -6,6 +6,7 @@
 
 <b>[노션 바로가기](https://melodious-hair-848.notion.site/)</b> <br>
 
+<hr>
 
 ### 개발 기능
   - 유저 관리 및 jwt 토큰 관리
@@ -34,7 +35,6 @@
    
 <hr>
 
-#### 폴더 구조
 
 <details>
 <summary>폴더 구조 보기</summary>
