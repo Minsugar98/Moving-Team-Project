@@ -3,9 +3,6 @@
 	<h1>MOVING  BE</h1><br>
   </span>
 </div>
-
-<b>[노션 바로가기](https://melodious-hair-848.notion.site/)</b> <br>
-
 <hr>
 
 ### 개발 기능
