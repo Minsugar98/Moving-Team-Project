@@ -1,27 +1,13 @@
-#  🛻 MOVING 
+<div align=center>
+	<span id="top">
+	<h1>MOVING  BE</h1><br>
+  </span>
+</div>
 
-팀 노션 : [melodious-hair-848.notion.site](https://melodious-hair-848.notion.site/) 
+<b>[노션 바로가기](https://melodious-hair-848.notion.site/)</b> <br>
 
----
-
-### **팀 구성**
-
-- 정준호
-- 김민수
-- 송영섭
-
-### **프로젝트 기간**
-
-- **2024.11.25 ~ 2025.01.14**
-
-### **프로젝트 설명**
-
-- **이사 업체와 사용자간의 매칭**
-  - 사용자 : 이사 정보 등록과 견적 요청 & 업체 지정 견적 요청
-  - 업체 : 사용자 이사 정보 확인 후 견적 발송
 
 ### 개발 기능
-- **김민수**
   - 유저 관리 및 jwt 토큰 관리
     - user
       - 회원가입
